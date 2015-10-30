@@ -19,7 +19,7 @@ class Deck
   end
 
   def output_incorrect
-    puts "You suck! If this were actual Jeopardy Trebeck would have laughed you out of town"
+    puts "You suck! If this were actual Jeopardy Trebeck would have laughed you out of town. Try again"
   end
 end
 
