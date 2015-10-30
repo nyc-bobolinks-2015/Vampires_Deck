@@ -1,4 +1,4 @@
-require 'csv'
+
 
 class Deck
   attr_accessor  :cards
@@ -27,15 +27,21 @@ class Deck
     @cards.select{ |k,v| k==sample }
   end
 
+
+
+  def print_definition
+  definition = pick_card.each_key {|def| puts key}
+  #user_input
+  end
+
+  def user_input
+  input = ""
+  definition #maybe I should take this out
+  input = gets.chomp
+  end
+
 end
 
 
 
 
-
-# test= Deck.new
-#  test.load_txt_file
-#  test.deletes_space
-#   test.turn_into_hash
-#   p test.pick_card
-#   test.cards
