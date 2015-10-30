@@ -10,7 +10,6 @@ class Deck
   def load_txt_file
     @cards = File.open('definitions.txt').readlines
     deletes_space
-  end
 
   def deletes_space
     @cards.reject!{|x|x=="\n"}
