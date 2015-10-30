@@ -31,12 +31,3 @@ class Deck
   end
 end
 
-class Card
-  attr_reader :definition, :question
-
-  def initialize(args)
-    @definition = args[:defintion]
-    @question = args[:question]
-  end
-
-end
